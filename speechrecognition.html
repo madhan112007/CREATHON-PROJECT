@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voice Command Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f5;
+            padding: 20px;
+        }
+        button {
+            padding: 10px;
+            background-color: #2a7fff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="voice"></h1>
-    <script src="voice.js"></script>
+
+    <h2>Say "Go to About" or "Go to Contact" to navigate.</h2>
+    <button onclick="startListening()">Start Listening</button>
+
+    <script>
+        var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = 'en-US';
+        recognition.continuous = false;
+
+        recognition.onstart = function() {
+            console.log("Listening for voice command...");
+        };
+
+        recognition.onresult = function(event) {
+            var command = event.results[0][0].transcript.toLowerCase();
+            console.log("Voice command: " + command);
+
+            if (command === "go to about") {
+                window.location.href = "blogsabout.html";
+            } else if (command === "go to contact") {
+                window.location.href = "blogscontact.html";
+            } else {
+                alert("Please say 'Go to About' or 'Go to Contact'.");
+            }
+        };
+
+        recognition.onerror = function(event) {
+            console.log("Error occurred in recognition: " + event.error);
+        };
+
+        function startListening() {
+            recognition.start();
+        }
+    </script>
+
 </body>
 </html>
