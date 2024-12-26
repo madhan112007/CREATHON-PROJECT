@@ -15,23 +15,23 @@
                 <li><a href="blogsabout.html">About</a></li>
                 <li><a href="blogscontact.html">Contact</a></li>
             </ul>
-            <a href="signup.html" class="signup-link">Sign Up</a>
+            <!--<a href="signup.html" class="signup-link">Sign Up</a>-->
         </nav>
     </header>
     <section class="blog-description">
-        <h2>About My Blog</h2>
-        <p>Welcome to My Blog, where we share insightful articles, tips, and updates on the latest trends in social media, photography, community building, and much more. Whether you're a social media enthusiast, a photographer, or someone who loves learning new tricks, our blog has something for everyone. Dive into the posts to stay updated and join our community of passionate readers. From Snapchat tips to creative storytelling and growing your Instagram presence, you'll find plenty of valuable content to explore. Stay tuned for regular updates!</p>
+        <h2 style="font-family: Audiowide, sans-serif;">About My Blog</h2>
+        <p style="font-family: Poppins;">Welcome to My Blog, where we share insightful articles, tips, and updates on the latest trends in social media, photography, community building, and much more. Whether you're a social media enthusiast, a photographer, or someone who loves learning new tricks, our blog has something for everyone. Dive into the posts to stay updated and join our community of passionate readers. From Snapchat tips to creative storytelling and growing your Instagram presence, you'll find plenty of valuable content to explore. Stay tuned for regular updates!</p>
     </section>
-
     <main id="content">
         <section class="home">
-            <h1>Welcome to My Blog!</h1>
+            <h1 class="color">Welcome to My Blog!</h1>
             <div class="blog-list">
-                <div class="blog-post">
-                    <img src="snap.png" alt="Snapchat Tips">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img10.jpg" alt="Snapchat Tips">
                     <h2><a href="about.html">Snapchat Tips</a></h2>
                     <p class="snippet">Discover the latest tricks and features of Snapchat...</p>
-                    <span class="date">Published on::18:30 PM ON Dec 25, 2024</span>
+                    <span class="date">Published on: 18:30 PM ON Dec 25, 2024</span>
+                    <div class="post-emoji">😊</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -43,12 +43,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="insta.png" alt="Instagram Strategies">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img1.jpg" alt="Instagram Strategies">
                     <h2><a href="about.html">Instagram Strategies</a></h2>
                     <p class="snippet">Learn how to grow your audience on Instagram...</p>
-                    <span class="date">Published on: :17:30 PM ON Dec 20, 2024</span>
+                    <span class="date">Published on: 17:30 PM ON Dec 20, 2024</span>
+                    <div class="post-emoji">📸</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -60,12 +65,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="dog.png" alt="Share Your Moment">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img2.jpg" alt="Share Your Moment">
                     <h2><a href="about.html">Share Your Moment</a></h2>
                     <p class="snippet">Tips to share your current situations creatively...</p>
-                    <span class="date">Published on: :17:30 PM ON Dec 18, 2024</span>
+                    <span class="date">Published on: 17:30 PM ON Dec 18, 2024</span>
+                    <div class="post-emoji">🐶</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -77,12 +87,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="story.png" alt="Creative Storytelling">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img3.jpg" alt="Creative Storytelling">
                     <h2><a href="about.html">Creative Storytelling</a></h2>
                     <p class="snippet">Explore how to tell your story with a personal touch...</p>
-                    <span class="date">Published on::00:00 PM ON Dec 15, 2024</span>
+                    <span class="date">Published on: 00:00 PM ON Dec 15, 2024</span>
+                    <div class="post-emoji">📖</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -94,12 +109,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="trend.png" alt="Social Media Trends">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img4.jpg" alt="Social Media Trends">
                     <h2><a href="about.html">Social Media Trends</a></h2>
                     <p class="snippet">Stay updated with the latest trends in social media...</p>
-                    <span class="date">Published on: :22:30 PM ON Dec 10, 2024</span>
+                    <span class="date">Published on: 22:30 PM ON Dec 10, 2024</span>
+                    <div class="post-emoji">🔥</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -111,12 +131,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="joe1.png" alt="Photo Editing Tips">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img5.jpg" alt="Photo Editing Tips">
                     <h2><a href="about.html">Photo Editing Tips</a></h2>
                     <p class="snippet">Learn how to enhance your photos like a pro...</p>
-                    <span class="date">Published on: :09:30 AM ON Dec 5, 2024</span>
+                    <span class="date">Published on: 09:30 AM ON Dec 5, 2024</span>
+                    <div class="post-emoji">📷</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -128,12 +153,17 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
                 </div>
-                <div class="blog-post">
-                    <img src="samplebulid.png" alt="Community Building">
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img6.jpg" alt="Community Building">
                     <h2><a href="about.html">Community Building</a></h2>
                     <p class="snippet">Discover how to create a thriving online community...</p>
-                    <span class="date">Published on: :13:30 PM ON Dec 1, 2024</span>
+                    <span class="date">Published on: 13:30 PM ON Dec 1, 2024</span>
+                    <div class="post-emoji">🌍</div>
                     <div class="comments-section">
                         <h3>Comments:</h3>
                         <div class="comment">
@@ -145,24 +175,34 @@
                             <button type="submit">Post Comment</button>
                         </form>
                     </div>
-                </div>
-                <div class="blog-post">
-                    <img src="image copy.png" alt="Growing Friendship">
-                    <h2><a href="about.html">Growing Friendship</a></h2>
-                    <p class="snippet">I AM HERE TO TELL HOE TO MAKE Friendship..</p>
-                    <span class="date">Published on:15:30 PM ON Dec 1, 2024</span>
-                 <div class="comments-section">
-                        <h3>Comments :</h3>
-                        <div class="comment">
-                           <p><strong>#MANIVELAVAN</strong> These insights are amazing!</p>
-                                         </div>
-                        <form id="comment-form-8">
-                            <label for="comment"></label>
-                            <textarea id="comment" name="comment" placeholder="Write your comment" required></textarea>
-                            <button type="submit">post comment</button>
-                        </form>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
                     </div>
                 </div>
+                <div class="blog-post" style="font-family: Audiowide;">
+                    <img src="asserts/img7.jpg" alt="Growing Friendship">
+                    <h2><a href="about.html">Growing Friendship</a></h2>
+                    <p class="snippet">I am here to tell how to make friendships...</p>
+                    <span class="date">Published on: 15:30 PM ON Dec 1, 2024</span>
+                    <div class="post-emoji">🤝</div>
+                    <div class="comments-section">
+                        <h3>Comments:</h3>
+                        <div class="comment">
+                            <p><strong>#MANIVELAVAN</strong> These insights are amazing!</p>
+                        </div>
+                        <form id="comment-form-8">
+                            <label for="comment">Leave a Comment:</label>
+                            <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                    <div>
+                        <span class="like-button" onclick="toggleLike(this)">❤️</span>
+                        <span class="like-count">0</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="footer-content">
@@ -181,19 +221,19 @@
                         <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
                         <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
                         <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                    </ul> </div>
+                    </ul>
+                </div>
                 <div class="footer-contact">
                     <h3>Contact</h3>
                     <p>Email: <a href="josephsam5934@gmail.com">support@myblog.com</a></p>
-                    <p>Phone:8682045934</p>
+                    <p>Phone: 8682045934</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 MyBlog. All rights reserved.</p>
             </div>
         </footer>
-       <script src="my blogs.js"></script>
-        
-  
-</body>
+        <script src="my blogs.js"></script>
+        <script>
+    </body>
 </html>

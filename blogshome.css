@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,17 +8,82 @@ body {
     background-color: #1650a7;
     color: #f01f1f;
 }
+        .logo {
+            font-family: 'Audiowide', sans-serif;
+            font-size: 3em;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7e5f, #0fbae9);
+            color: #fff;
+            text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #fff, 
+                0 0 20px #3108d1, 
+                0 0 30px #17c4c7, 
+                0 0 40px #ff00ff, 
+                0 0 50px #14ef44, 
+                0 0 60px #ff00ff, 
+                0 0 70px #ff00ff;
+        }
+        .blog-post {
+            font-family: 'Audiowide', sans-serif;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .blog-post img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Add the glowing text effect */
+        .color {
+            color: #fff; /* Text color */
+            text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #fff, 
+                0 0 20px #ff00ff, 
+                0 0 30px #ff00ff, 
+                0 0 40px #ff00ff, 
+                0 0 50px #ff00ff, 
+                0 0 60px #ff00ff, 
+                0 0 70px #ff00ff;
+        }
+.color {
+    color: #fff; /* Text color */
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 20px #08cfee, 
+        0 0 30px #1dbbf5, 
+        0 0 40px #09c9da, 
+        0 0 50px #0cc4ed, 
+        0 0 60px #ff00ff, 
+        0 0 70px #ff00ff;
+        padding: 20px;
+}
 
 h1 {
     text-align: center;
     margin: 20px 0;
     color: #f2f3f7;
+    font-family: Audiowide, Poppins;
+    box-shadow: 0 0 10px rgb(9, 237, 35),
+                0 0 10px rgb(2, 248, 88),
+                0 0 10px rgb(7, 247, 87);
 }
 
 .navbar {
     background-color: #2a7fff;
     padding: 15px;
     text-align: center;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+
 }
 
 .navbar .logo {
@@ -315,4 +382,115 @@ button:hover {
             font-size: 14px;
             color: #333;
         }
-        
+        .like-button {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .like-button.liked {
+            color: red;
+        }
+
+        .like-count {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        /* Emoji style */
+        .post-emoji {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        /* Mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar .nav-links li {
+        display: block;
+        text-align: center;
+    }
+    .blog-list {
+        grid-template-columns: 1fr;
+    }
+    .blog-post {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .navbar .nav-links li {
+        display: block;
+        text-align: center;
+    }
+    .blog-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-post {
+        width: 90%;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    .blog-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+header {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.signup-link {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-link:hover {
+    transform: scale(1.1);
+    background-color: #ff6f61;
+    color: white;
+}
+.blog-post {
+    animation: pulse 2s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.blog-post img {
+    animation: vibrate 2s ease-in-out infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(-5px); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0px); }
+}
+html {
+    scroll-behavior: smooth;
+}
+.blog-post{
+    box-shadow: 0 0 5px #0c0303;
+}
+

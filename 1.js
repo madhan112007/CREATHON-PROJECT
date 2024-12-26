@@ -60,3 +60,19 @@ document.addEventListener("click", function (event) {
         }
     });
 });
+function toggleLike(button) {
+    let likeCountElement = button.nextElementSibling;
+    let likeCount = parseInt(likeCountElement.textContent);
+    
+    if (button.classList.contains('liked')) {
+        // Remove like
+        button.classList.remove('liked');
+        likeCount--;
+    } else {
+        // Add like
+        button.classList.add('liked');
+        likeCount++;
+    }
+    
+    likeCountElement.textContent = likeCount;
+}
